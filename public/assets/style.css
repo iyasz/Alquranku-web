@@ -1,0 +1,57 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --dark-primary: #213547;
+}
+
+
+.fw-300 {
+    font-weight: 300;
+}
+.fw-400 {
+    font-weight: 400;
+}
+.fw-600 {
+    font-weight: 600;
+}
+.fw-700 {
+    font-weight: 700;
+}
+
+.fs-sm {
+    font-size: 14px;
+}
+
+.fs-s-sm{
+    font-size: 12px;
+}
+
+.hero-content {
+    padding: 130px 0;
+}
+
+.col-list {
+    height: 90px;
+}
+
+.fc-dark {
+    color: var(--dark-primary);
+}
+
+.no-bg {
+    background: #ebeef0;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    color: var(--dark-primary);
+}
+
+.hero-content h1 span {
+    background: -webkit-linear-gradient(315deg,#4089ff 25%,#00c6fb);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
