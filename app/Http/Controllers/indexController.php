@@ -21,7 +21,8 @@ class indexController extends Controller
     public function baca($id)
     {
         $surah = Http::get('https://api.npoint.io/99c279bb173a6e28359c/surat/'.$id)->json();
-        // dd($surah);
-        return view('baca', ['surah' => $surah]);
+        $surat = Http::get('https://api.npoint.io/99c279bb173a6e28359c/data')->json();
+        // dd($surat);
+        return view('baca', ['surah' => $surah, 'surat' => $surat]);
     }
 }

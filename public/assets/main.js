@@ -12,5 +12,17 @@
 //         console.log(error);
 //     })
 //     .finally(function () {
-//         // always executed
+
 // });
+
+$(".nav-href").on("click", function(e) {
+    e.preventDefault()
+
+    var linkHref = $(this).attr("href");
+    $("html, body").animate({
+            scrollTop: $(linkHref).offset().top - 130,
+        },
+        1000
+    );
+    return false;
+})

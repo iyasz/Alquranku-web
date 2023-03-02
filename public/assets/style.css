@@ -55,3 +55,9 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.nomor-surah {
+    position: fixed;
+    height: 85vh;
+    overflow-y: auto;
+}

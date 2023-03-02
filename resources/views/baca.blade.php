@@ -12,18 +12,26 @@
         <div class="container">
             <div class="row">
                 <div class="col-2">
-                    adawd
+                    <div class="nomor-surah">
+                        @foreach ($surat as $surahName)
+                          <a class=" text-decoration-none" href="{{$surahName['nomor']}}"><p>{{$surahName['nama']}}</p></a>
+                          
+                        @endforeach
+                    </div>
                 </div>
-                <div class="col-1">
-                    awdad
+                <div class="col-1" id="no-surah">
+                    <div class="nomor-surah" >
+                        @foreach ($surah as $no)
+                          <a class="nav-href text-decoration-none" href="#scroll{{$no['nomor']}}"><p>{{$no['nomor']}}</p></a>
+                        @endforeach
+                    </div>
                 </div>
                 <div class="col-lg-9">
-                    <div class="">
-                    
-                        @foreach ($surah as $ayat)
-                        <div class="row my-4">
+                    @foreach ($surah as $ayat)
+                    <div class="my-5">
+                        <div class="row" id="scroll{{$ayat['nomor']}}">
                             <div class="col-2 my-auto">
-                                <p class="text-end">{{$ayat['nomor']}}</p>    
+                                    <p class="text-end">{{$ayat['nomor']}}</p>    
                             </div>
                             <div class="col-10">
                                 <h1 class="text-end fw-600 my-auto ">{{$ayat['ar']}}</h1>    
@@ -38,8 +46,8 @@
                                 <p>{{$ayat['id']}}</p>    
                             </div>
                         </div>
-                        @endforeach
                     </div>
+                        @endforeach
                 </div>
             </div>
         </div>
