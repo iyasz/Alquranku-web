@@ -11,18 +11,17 @@
     <section id="list">
         <div class="container">
             <div class="row">
-                <div class="col-2">
-                    <div class="nomor-surah">
+                <div class="col-2 d-lg-block d-none pe-0">
+                    <div class="nomor-surah text-center">
                         @foreach ($surat as $surahName)
-                          <a class=" text-decoration-none" href="{{$surahName['nomor']}}"><p>{{$surahName['nama']}}</p></a>
-                          
+                          <a class=" text-decoration-none fc-dark" href="{{$surahName['nomor']}}"><p>{{$surahName['nama']}}</p></a>
                         @endforeach
                     </div>
                 </div>
-                <div class="col-1" id="no-surah">
-                    <div class="nomor-surah" >
+                <div class="col-1 d-lg-block d-none" id="no-surah">
+                    <div class="nomor-surah text-center" >
                         @foreach ($surah as $no)
-                          <a class="nav-href text-decoration-none" href="#scroll{{$no['nomor']}}"><p>{{$no['nomor']}}</p></a>
+                          <a class="nav-href text-decoration-none fc-dark" href="#scroll{{$no['nomor']}}"><p>{{$no['nomor']}}</p></a>
                         @endforeach
                     </div>
                 </div>

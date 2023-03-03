@@ -61,3 +61,7 @@ body {
     height: 85vh;
     overflow-y: auto;
 }
+
+.nomor-surah a p:hover {
+    background: #f3f3f3;
+}
